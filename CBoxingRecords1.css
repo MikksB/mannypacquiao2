@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.925);
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
@@ -55,14 +55,16 @@ nav{
     margin-left: auto; 
     margin-right: auto; 
     /* margin: 5px auto 0; */
-    width: 1507px;
-    height: 50px;
+    width: 828px;
+    height: 30px;
     /* background: black; */
     border-radius: 8px;
     font-size: 0;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
     transition: all .5 ease 0s;
-    
+    /* text-align: center;
+    align-items: center;
+     */
 }
 nav .animation{
     position:absolute;
@@ -75,72 +77,74 @@ nav .animation{
     border-radius: 8px;
 }
 nav a {
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-    line-height: 50px;
+    line-height: 30px;
     position: relative;
     z-index: 1;
     display: inline-block;
     text-align: center;
+
 }
 
+
 a:nth-child(1){
-    width: 200px;
+    width: 100px;
 }
 a:nth-child(2){
-    width: 200px;
+    width: 100px;
 }
 a:nth-child(3){
-    width: 200px;
+    width: 150px;
 }
 
 a:nth-child(4){
-    width: 200px;
+    width: 100px;
 }
 a:nth-child(5){
-    width: 200px;
+    width: 100px;
 }
 a:nth-child(6){
-    width: 200px;
+    width: 100px;
 }
 a:nth-child(7){
-    width: 300px;
+    margin-left: 10px;
+    width: 150px;
 }
-
 
 
 nav .start-currenttransaction, a:nth-child(1):hover~.animation{
-    width: 200px;
+    width: 100px;
     left: 0;
 }
 nav .start-completedtransaction, a:nth-child(2):hover~.animation{
-    width: 200px;
-    left: 200px;
+    width: 100px;
+    left: 100px;
 }
 nav .start-managemenu, a:nth-child(3):hover~.animation{
-    width: 200px;
-    left: 400px;
+    width: 150px;
+    left: 200px;
 }
 
 
 nav .start-currenttransaction, a:nth-child(4):hover~.animation{
-    width: 200px;
-    left: 600px;
+    width: 100px;
+    left: 352px;
 }
 nav .start-completedtransaction, a:nth-child(5):hover~.animation{
-    width: 200px;
-    left: 800px;
+    width:100px;
+    left: 452px;
 }
 nav .start-managemenu, a:nth-child(6):hover~.animation{
-    width: 200px;
-    left: 1000px;
+    width: 100px;
+    left: 552px;
 }
 nav .start-managemenu, a:nth-child(7):hover~.animation{
-    width: 300px;
-    left: 1200px;
+    width: 180px;
+    left: 652px;
 }
 /*content below header*/
 .contents{
@@ -151,6 +155,19 @@ p{
     color: white;
     margin: 10px;
 }
+
+.imguser2
+{ 
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+   
+   
+}
+
+/* new code card */
 
 /* contents */
 .imguser
@@ -164,21 +181,12 @@ p{
 }
 
 
-.box h1
-{
-    text-align: right;
-    font-weight: 600;
-    font-size: 40px;
-    color:#c62527;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
 
 .content h1
 {
     text-align: center;
-    font-weight: 750;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 22px;
     color:#c62527;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -186,14 +194,14 @@ p{
 
 .content h3
 {
-    font-size: 20px;
+    font-size: 15px;
     
 }
 .content h3{
     text-decoration: none;
     width: 95%;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -201,49 +209,56 @@ p{
     text-decoration: none;
     color: #c62527;
 }
+/* .content h3:hover a{
+    color:#c62527;
+} */
 
 .content p
 {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 20px;
+    font-size: 15px;
+}
+
+p{
+    text-align: justify;
 }
 
 .content
 {
+    text-align: center;
     /* padding-left: 30px ; */
     text-align: justify;
 }
 
 .allcontent{
-    padding: 40px 30px;
-       
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 35px 30px;
+    display: flex;    
+    margin-top: 0;
     justify-content: center;
-    width: 900px;
-    height: 700px;
-    border-radius:  8px ;
-    /* background-color:#363940; */
-    /* box-shadow: -5px -5px 20px #ecf0f3, 5px 5px 20px #babecc; */
+    width: 600px;
+    height: 100%;
 }
 .row
 {
     display: flex;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .column2
 {
-    margin-top: 10px;
-    padding: 40px 0px;   
-    margin-left: 0;
-    margin-right: auto;
+    margin-top: 0;
+    padding: 20px 0px;   
+    margin-left: 20px;
+    margin-right: 30px;
     justify-content: center;
-    width: 550px;
+    width: 350px;
     height: 600px;
-    background: black;
-    border-radius: 0 30px 30px 0;
+    /* background-color: blanchedalmond; */
 }
 
 .imguser
@@ -262,7 +277,9 @@ p{
 .column2 h2{
     padding-bottom: 5px;
     color:#c62527;
-    margin-top: 10px;
+}
+.column2 p{
+    font-size: 12px;
 }
 
 
@@ -277,19 +294,15 @@ p{
 
 .line3{
     width: 1px;
-    height: 800px;
+    height: 700px;
     background-color: rgba(163, 163, 163, 0.541);
     border-color: rgba(163, 163, 163, 0.541);
-    margin-right: 100px;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-top: 30px;
  
 }
 
 
-p{
-    text-align: justify;
-}
 
 .line2{
     margin: auto auto;
@@ -300,8 +313,6 @@ p{
     margin-bottom: 15px;
  
 }
-
-
 
 .content2
 {
@@ -352,6 +363,29 @@ p{
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-   
+}
 
+.footer
+{
+    padding: 20px 0;
+    background-color: #c62527;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer p{
+    color:rgba(255, 255, 255, 0.856);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ 
 }
