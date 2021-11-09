@@ -19,6 +19,14 @@ header .headerbar {
     position: relative;
 
 }
+.headernav{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px ;
+}
 
 .headerbar a {
     color: blanchedalmond;
@@ -30,8 +38,11 @@ header .headerbar {
     bottom: 12px;
 }
 
+
+
 nav{
-    position:absolute;
+    position:relative;
+    background-color: #c62527;
     left: 0; 
     right: 0; 
     margin-top: 5px;
@@ -56,7 +67,7 @@ nav .animation{
     height: 100%;
     bottom: 0;
     z-index: 0;
-    background: black;
+    background: rgba(0, 0, 0, 0.411);
     border-radius: 8px;
 }
 nav a {
